@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "5d100bb9-4158-4aba-b1ea-9170304d61f1",
+		"name": "Reto Express Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42789476"
+	},
+	"item": [
+		{
+			"name": "Shops",
+			"item": [
+				{
+					"name": "AllShops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/shops/allShops",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"shops",
+								"allShops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/shops/namee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"shops",
+								"namee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByAddress",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/shops/address/Avenida Central 456, Ciudad B",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"shops",
+								"address",
+								"Avenida Central 456, Ciudad B"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateShop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Name\",\r\n    \"address\": \"address\",\r\n    \"phoneNumber\": 11223344\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/shops/createShop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"shops",
+								"createShop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateShops",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"name\": \"Name\",\r\n    \"address\": \"address\",\r\n    \"phoneNumber\": 11223344\r\n    },\r\n    {\r\n        \"name\": \"Name\",\r\n        \"address\": \"address\",\r\n        \"phoneNumber\": 11223344\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/shops/createShops",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"shops",
+								"createShops"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "AllProducts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/allProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"allProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByName",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/name/iPhone 13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"name",
+								"iPhone 13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByModel",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/model/SM-G991",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"model",
+								"SM-G991"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByType",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/type/Electronics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"type",
+								"Electronics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByPrice",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/price/799",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"price",
+								"799"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByInStock",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/inStock/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"inStock",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProduct",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"nombre\",\r\n    \"model\": \"hola\",\r\n    \"type\": \"tipo\",\r\n    \"price\": 12233,\r\n    \"inStock\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/createProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"createProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProducts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"name\": \"nombre\",\r\n    \"model\": \"hola\",\r\n    \"type\": \"tipo\",\r\n    \"price\": 12233,\r\n    \"inStock\": true\r\n},{\r\n    \"name\": \"nombre\",\r\n    \"model\": \"hola\",\r\n    \"type\": \"tipo\",\r\n    \"price\": 12233,\r\n    \"inStock\": true\r\n}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/createProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"createProducts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "AllEmployees",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/employees/allEmployees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"allEmployees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByName",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/employees/name/Juan Pérez",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"name",
+								"Juan Pérez"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByPost",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/employees/post/Asistente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"post",
+								"Asistente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BySalary",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/employees/salary/5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"salary",
+								"5000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateEmployee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Lucia Daniela Vargas\",\r\n    \"post\": \"Gerente\",\r\n    \"salary\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/employees/createEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"createEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateEmployees",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n{\r\n    \"name\": \"Lucia Daniela Vargas\",\r\n    \"post\": \"Gerente\",\r\n    \"salary\": 100\r\n},\r\n{\r\n    \"name\": \"Lucia Daniela Vargas\",\r\n    \"post\": \"Gerente\",\r\n    \"salary\": 100\r\n}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/employees/createEmployees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"createEmployees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
