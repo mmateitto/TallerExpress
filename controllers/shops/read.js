@@ -19,7 +19,6 @@ let shopsByName = async (req, res, next) => {
         return res.status(200).json({
             response: all
         })
-
     }catch(error){
         next(error)
     }

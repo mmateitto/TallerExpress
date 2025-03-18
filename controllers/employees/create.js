@@ -13,5 +13,18 @@ let create = async (req, res, next) => {
         next(error)
     }
 }
+let createMany = async (req, res, next) => {
+    try {
+        let employeesInfo = req.body
 
-export default create
+        let createEmployee = await Employee.create(employeesInfo)
+
+        return res.status(201).json({
+            response: createEmployee
+        })
+    }catch(error){
+        next(error)
+    }
+}
+
+export {create, createMany};

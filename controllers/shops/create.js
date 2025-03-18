@@ -14,4 +14,18 @@ let create = async (req, res, next) => {
     }
 }
 
-export default create
+let createMany = async (req, res, next) => {
+    try {
+        let shopsInfo = req.body
+
+        let createShops = await Shop.create(shopsInfo)
+
+        return res.status(201).json({
+            response: createShops
+        })
+    }catch(error){
+        next(error)
+    }
+}
+
+export {create, createMany};
